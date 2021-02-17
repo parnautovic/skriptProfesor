@@ -1,0 +1,16 @@
+
+<div class="jumbotron">
+  <h1 class="display-4"><%= @friends_app.first_name %>
+    <%= @friends_app.last_name %>
+  </h1>
+  <p class="lead"> <%= @friends_app.email %> | <%= @friends_app.phone %> | <%= @friends_app.twitter %></p>
+  </br></br>
+  <%= link_to 'Edit', edit_friends_app_path(@friends_app), class:"btn btn-secondary" %> 
+<%= link_to 'Back', friends_apps_path, class:"btn btn-secondary" %>
+  </p>
+</div>
+
+
+
+
+
